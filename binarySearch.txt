@@ -1,0 +1,12 @@
+public static bool binarySearch(int[] Vector, int Number)
+        {
+            int Left = 0, Right = Vector.Length - 1, Middle;
+            while (Left <= Right)
+            {
+                Middle = (Left + Right) / 2;
+                if (Vector[Middle] == Number) return true;
+                else if (Vector[Middle] > Number) Right = Middle - 1;
+                else Left = Middle + 1;
+            }
+            return false;
+        }
