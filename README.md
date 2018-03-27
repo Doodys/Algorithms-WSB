@@ -4,3 +4,5 @@
 "# KATA" 
 "# KATA" 
 "# Zadania-PP-Complak" 
+"# Cryptography" 
+"# Algorithms-WSB" 
