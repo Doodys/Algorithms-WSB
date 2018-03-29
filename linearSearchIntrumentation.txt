@@ -1,0 +1,11 @@
+public static bool LinearSearch(int[] Vector, int Number)
+        {
+            Assignment = 1;
+            for (int i = 0; i < Vector.Length; i++, Increment++)
+            {
+                BiggerSmaller++;
+                IsEqual++;
+                if (Vector[i] == Number) { return true; }
+            }
+            return false;
+        }

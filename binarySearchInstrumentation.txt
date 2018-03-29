@@ -1,0 +1,15 @@
+public static bool BinarySearch(int[] Vector, int Number)
+        {
+            Assignment = 2; Subtraction = 1;
+            int Left = 0, Right = Vector.Length - 1, Middle;
+            while (Left <= Right)
+            {
+                Assignment++; BiggerSmaller++; Addition++; Division++;
+                Middle = (Left + Right) / 2;
+                IsEqual++;
+                if (Vector[Middle] == Number) { return true; }
+                else if (Vector[Middle] > Number) { BiggerSmaller++; Assignment++; Subtraction++; Right = Middle - 1; }
+                else { Assignment++; Addition++; Left = Middle + 1; }
+            }
+            return false;
+        }
