@@ -7,7 +7,8 @@ for (int i = 0; i < Amount; i++)
                     p.Array[j] = rnd.Next(-100, 100);
                     if (p.Array[j] == losElementos) { p.Array[j] += 1; }
                 }
-                if (linearSearch(p.Array, losElementos) == true) { Check = false; }
-		if (Check == false) { Console.WriteLine ("\tTAK\t\t"); }
-            	else { Console.WriteLine ("\tNIE\t\t"); }
+                Array.Sort(p.Array);
+                if (binarySearch(p.Array, losElementos) == true) { Check = false; }
+		if (Check == false) { Console.WriteLine("TAK"); }
+		else { Console.WriteLine("NIE"); }
             }
