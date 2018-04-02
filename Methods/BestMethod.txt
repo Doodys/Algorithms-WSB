@@ -1,0 +1,11 @@
+public static bool IsPrimeDaBest(BigInteger Num)
+        {
+            if (Num % 2 <= 0) { return Num == 2; }
+            BigInteger Power = 9;
+            for (BigInteger i = 3; Power <= Num; i += 2)
+            {
+                if (Num % i == 0) { return false; }                 
+                Power += i * 4 + 4;
+            }
+            return true;
+        }
